@@ -1,15 +1,15 @@
-console.log('hello TypeScript');
-
-function add(n1: number, n2: number) {
-    // if (typeof n1 !== 'number' || typeof n2 !== 'number') {
-    //    throw new Error('Incorrect input!')
-    // }
-    return n1 + n2;
+function add(n1: number, n2: number, showResult: boolean, phrase: string) {
+    const result = n1 + n2;
+    if (showResult) {
+        console.log(phrase + result)
+    } 
+    return result;
 }
 
-const number1 = "5";
+let number1: number;
+number1 = 3;
 const number2= 2.6;
-const result = add(number1, number2);
+const printResult = true;
+const resultPhrase = 'Result is: '
 
-console.log(result)
-
+const result = add(number1, number2, printResult, resultPhrase);
