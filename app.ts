@@ -1,15 +1,11 @@
-function add(n1: number, n2: number, showResult: boolean, phrase: string) {
-    const result = n1 + n2;
-    if (showResult) {
-        console.log(phrase + result)
-    } 
-    return result;
-}
+const person = {
+    name: 'Adam',
+    age: 35,
+    hobbies: ['coding', 'music', 'biking'],
+    facts: {
+        married: true,
+        children: 2,
+    }
+};
 
-let number1: number;
-number1 = 3;
-const number2= 2.6;
-const printResult = true;
-const resultPhrase = 'Result is: '
-
-const result = add(number1, number2, printResult, resultPhrase);
+console.log(person.name);
