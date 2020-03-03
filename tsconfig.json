@@ -62,5 +62,12 @@
 
     /* Advanced Options */
     "forceConsistentCasingInFileNames": true  /* Disallow inconsistently-cased references to the same file. */
-  }
+  },
+  "exclude": [
+    "node_modules" // this is excluded by default
+  ],
+  // "include": [ 
+  //   "app.ts", "analytics.ts"
+  // ],
+  "files": [ "app.ts" ], // can't specify folders
 }
